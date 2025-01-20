@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* General Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif; /* Use a modern, readable font */
+  background-color: #f9f9f9; /* Soft background color */
+  color: #333; /* Default text color */
+}
+
+/* Heading Styles */
+h2 {
+  @apply text-3xl font-bold text-center mb-6 text-gray-800;
+  letter-spacing: 0.05em; /* Add slight spacing for readability */
+  line-height: 1.2; /* Improve readability */
+}
+
+/* Utility Classes */
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-all duration-200;
+}
+
+.btn-secondary {
+  @apply bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-700 transition-all duration-200;
+}
+
+/* Responsive Enhancements */
+@media (min-width: 768px) {
+  h2 {
+    @apply text-4xl; /* Larger font for medium screens */
+  }
+}
