@@ -19,7 +19,7 @@ const __dirname = dirname(__filename);
 
 // Middlewares
 app.use(cors({
-  origin: process.env.CLIENT_URL || "https://carlos-mls2.onrender.com",
+  origin: process.env.CLIENT_URL || "https://carlos-mls2.onrender.com", // Replace with your actual client URL if needed
   credentials: true,             // Allows cookies to be sent
 }));
 app.use(express.json());
