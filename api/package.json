@@ -21,7 +21,6 @@
     "dev": "nodemon index.js",
     "build": "cd ./client && npm install && npm run build",
     "start": "node index.js"
-
   },
   "keywords": [],
   "author": "",
